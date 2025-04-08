@@ -4,10 +4,12 @@
 ## Group Edit
 
 ```{r}
+#| include: false
 library(ggplot2)
 ```
 
 ```{r}
+#| echo: false
 ggplot(mpg, aes(x=cty,y=hwy))+geom_point()
 ```
 
