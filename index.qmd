@@ -7,8 +7,12 @@ Note to lab members: this document is a work in progress and may change.
 It is your responsibility to be familiar with the content, so you should review these policies regularly.
 :::
 
-Welcome to Fish Population Analysis Lab.
+Welcome to **Fish Population Analysis Lab**.
 In this lab, we study modeling applied on fisheries
+
+-   This one
+-   Another one
+-   To see [@ThorsonEtAl2015b]
 
 ::: callout-important
 ## Edit This Section
