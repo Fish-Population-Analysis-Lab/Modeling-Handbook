@@ -30,6 +30,7 @@ book:
     - offboarding.qmd
     - research-best-practices.qmd
     - authorship.qmd
+    - dashboard-r.qmd
     - references.qmd
 
 bibliography: references.bib

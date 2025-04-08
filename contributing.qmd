@@ -50,3 +50,4 @@ If you include any code chunks in your edits, you will need to render them local
     `usethis::git_sitrep()` can help you troubleshoot and we also recommend reading/searching [happygitwithr.com](https://happygitwithr.com/).
     You only need to run this the first time you contribute to the book.
     For subsequent contributions, just open the RStudio project and start with step 2.
+    
