@@ -1,7 +1,20 @@
+---
+format: dashboard
+---
+
+
 # Offboarding
 
 ::: callout-important
 ## Group Edit
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+ggplot(mpg, aes(x=cty,y=hwy))+geom_point()
+```
 
 This may be difficult to finalize until someone goes through the offboarding process and takes thorough notes (ideally by [editing](contributing.qmd) this page).
 Here are some discussion topics to get you started though:
