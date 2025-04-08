@@ -1,4 +1,4 @@
-# Lab Group Handbook Template
+# TUMSAT Lab Group Handbook For Modeling
 
 <!-- badges: start -->
 
