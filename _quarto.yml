@@ -7,7 +7,7 @@ execute:
   freeze: auto #only important if your book includes executed code
   
 book:
-  title: "Fish Population Lab Handbook"
+  title: "Fish Population Analysis Lab Handbook"
   search: true
   repo-url: https://github.com/Fish-Population-Analysis-Lab/Modeling-Handbook#
   repo-actions: [edit, issue]

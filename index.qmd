@@ -13,7 +13,6 @@ In this lab, we study modeling applied on fisheries
 ::: callout-important
 ## Edit This Section
 
-
 Many lab group handbooks start with a short description of what the lab works on
 :::
 
