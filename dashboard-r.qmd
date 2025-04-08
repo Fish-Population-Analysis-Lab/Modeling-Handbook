@@ -1,17 +1,3 @@
----
-title: "dashboard-r"
-format: dashboard
----
+# Dashboard work
 
-
-```{r}
-library(ggplot2)
-```
-
-```{r}
-ggplot(mpg, aes(x=cty,y=hwy))+geom_point()
-```
-
-```{r}
-ggplot(mpg, aes(x=drv))+geom_bar()
-```
+Here I want too include r code

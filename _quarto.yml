@@ -28,6 +28,7 @@ book:
     - group-expectations.qmd
     - onboarding.qmd
     - offboarding.qmd
+    - dashboard-r.qmd
     - research-best-practices.qmd
     - authorship.qmd
     - references.qmd
