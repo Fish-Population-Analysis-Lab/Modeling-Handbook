@@ -1,16 +1,4 @@
----
-format: dashboard
----
-
-# Dashhhhhhh
-
-```{r}
-library(ggplot2)
-```
-
-```{r}
-ggplot(mpg, aes(x=cty,y=hwy))+geom_point()
-```
+# Offboarding
 
 ::: callout-important
 ## Group Edit
