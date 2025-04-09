@@ -154,7 +154,7 @@
     "href": "dashboard-r.html",
     "title": "5  Dashbord title normal",
     "section": "",
-    "text": "Euler’s identity is beautiful:\n\\[\ne^{i\\pi} + 1 = 0\n\\]",
+    "text": "Euler’s identity is beautiful:\n\\[\ne^{i\\pi} + 1 = 0\n\\]\n\\[\n\\begin{align}\nf(x) &= \\int_{-\\infty}^{\\infty} \\hat{f}(\\xi) e^{2\\pi i \\xi x} d\\xi \\\\\na^2 + b^2 &= c^2\n\\end{align}\n\\]",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dashbord title normal</span>"
     ]
