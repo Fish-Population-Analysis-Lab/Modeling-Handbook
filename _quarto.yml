@@ -42,15 +42,12 @@ format:
   html:
     number-depth: 1
     link-external-newwindow: true
-    theme: #bootswatch themes.  For other options check out https://bootswatch.com/
+     theme: default #bootswatch themes.  For other options check out https://bootswatch.com/
       dark: Cerulean
       
     css: styles.css
     df-print: paged
     self-contained: true
-    fig-width: 8
-    fig-height: 4
-    code-fold: true
 
 editor: 
   markdown:
