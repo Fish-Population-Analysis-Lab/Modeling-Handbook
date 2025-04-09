@@ -5,6 +5,9 @@ project:
 
 execute: 
   freeze: auto #only important if your book includes executed code
+  echo: true
+  warning: false
+  message: false
   
 book:
   title: "Fish Population Analysis Lab Handbook"
