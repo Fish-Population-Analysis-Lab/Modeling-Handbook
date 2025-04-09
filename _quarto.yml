@@ -44,6 +44,8 @@ format:
       dark: Cerulean
     css: styles.css
     fonttheme: professionalfonts
+aspectratio: 169
+fontsize: 11pt
 
 editor: 
   markdown:
