@@ -29,13 +29,13 @@ book:
     - contributing.qmd
     - href: code-of-conduct.qmd
       text: "Code of Conduct" # A different title for the TOC than on the page itself
-    #- group-expectations.qmd
-    #- onboarding.qmd
-    #- offboarding.qmd
-   # - dashboard-r.qmd
-    #- research-best-practices.qmd
-    #- authorship.qmd
-    #- references.qmd
+    - group-expectations.qmd
+    - onboarding.qmd
+    - offboarding.qmd
+    - dashboard-r.qmd
+    - research-best-practices.qmd
+    - authorship.qmd
+    - references.qmd
 
 bibliography: references.bib
 
@@ -43,12 +43,12 @@ format:
   html:
     number-depth: 1
     link-external-newwindow: true
-    theme: custom.scss #bootswatch themes.  For other options check out https://bootswatch.com/
-      #- default
-      #- custom.scss
+    theme:  #bootswatch themes.  For other options check out https://bootswatch.com/
+      - default
+      - custom.scss
     #css: styles.css
-    #df-print: paged
-    #self-contained: true
+    df-print: paged
+    self-contained: true
   
 editor: 
   markdown:
