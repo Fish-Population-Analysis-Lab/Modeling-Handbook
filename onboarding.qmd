@@ -1,9 +1,9 @@
 # Onboarding
 
 ::: callout-important
-## Group Edit
+## Group Edit 
 
-This is most easily edited by someone actively going through the onboarding process (or someone who recently joined the lab group).
+This is most **easily edited** by someone actively going through the onboarding process (or someone who recently joined the lab group).
 That being said, here are some discussion questions to get you started:
 
 -   How long is "onboarding"?
