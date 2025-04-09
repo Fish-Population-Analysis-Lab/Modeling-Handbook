@@ -110,21 +110,11 @@
     ]
   },
   {
-    "objectID": "onboarding.html#first-day",
-    "href": "onboarding.html#first-day",
-    "title": "3  Onboarding",
-    "section": "",
-    "text": "Management strategy",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Onboarding</span>"
-    ]
-  },
-  {
     "objectID": "onboarding.html#first-week",
     "href": "onboarding.html#first-week",
     "title": "3  Onboarding",
     "section": "First week",
-    "text": "First week\n\nSet up regular meetings\nStake out lab space\netc…",
+    "text": "First week",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Onboarding</span>"
     ]
@@ -154,7 +144,7 @@
     "href": "dashboard-r.html",
     "title": "5  Dashboard work",
     "section": "",
-    "text": "Here I want too include r code",
+    "text": "Here I want too include r code.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dashboard work</span>"
     ]
