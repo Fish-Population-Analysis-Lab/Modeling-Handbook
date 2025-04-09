@@ -25,6 +25,11 @@ See [Editing This Book](contributing.qmd).
 
 ## First day
 
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
+
 
 
 ## First week
