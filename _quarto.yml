@@ -5,7 +5,7 @@ project:
 
 execute: 
   freeze: auto #only important if your book includes executed code
-  echo: true
+  echo: false
   warning: false
   message: false
   
