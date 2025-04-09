@@ -110,6 +110,16 @@
     ]
   },
   {
+    "objectID": "onboarding.html#first-day",
+    "href": "onboarding.html#first-day",
+    "title": "3  Onboarding",
+    "section": "",
+    "text": "Caption",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Onboarding</span>"
+    ]
+  },
+  {
     "objectID": "onboarding.html#first-week",
     "href": "onboarding.html#first-week",
     "title": "3  Onboarding",
@@ -142,11 +152,11 @@
   {
     "objectID": "dashboard-r.html",
     "href": "dashboard-r.html",
-    "title": "5  Dashboard work",
+    "title": "5  Dashbord title normal",
     "section": "",
-    "text": "Here I want too include r code.",
+    "text": "This is dashboards",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dashboard work</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Dashbord title normal</span>"
     ]
   },
   {
