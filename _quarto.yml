@@ -31,7 +31,6 @@ book:
     - group-expectations.qmd
     - onboarding.qmd
     - offboarding.qmd
-    - dashboard-r.qmd
     - research-best-practices.qmd
     - authorship.qmd
     - references.qmd
@@ -43,7 +42,7 @@ format:
     number-depth: 1
     link-external-newwindow: true
      theme:  #bootswatch themes.  For other options check out https://bootswatch.com/
-      dark: Cerulean
+       dark: Cerulean
       
     css: styles.css
     df-print: paged
