@@ -50,6 +50,10 @@ format:
     df-print: paged
     self-contained: true
   
+ pdf:
+    documentclass: book
+    include-in-header: preamble.tex
+    
 editor: 
   markdown:
     wrap: sentence #Forces each sentence to be on its own line in source markdown, doesn't affect how it is rendered
