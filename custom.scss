@@ -7,9 +7,18 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
 }
 
+// CBS corporate colors
+$corplightblue: #00a1cd;
+$corpdarkblue: #0058b8;
+
+.some-element {
+  background-color: $corplightblue;
+  color: $corpdarkblue;
+}
+
 /* Change background color of code chunks */
 pre.sourceCode {
-  background-color: #f0f8ff; /* Light blue, change as needed */
+  background-color: $corpdarkblue; /* Light blue, change as needed */
   border-radius: 5px;        /* Optional: rounded corners */
   padding: 10px;             /* Optional: padding inside the code chunk */
 }
@@ -31,11 +40,4 @@ pre.sourceCode {
   font-size: 50%;
 }
 
-// CBS corporate colors
-$corplightblue: #00a1cd;
-$corpdarkblue: #0058b8;
 
-.some-element {
-  background-color: $corplightblue;
-  color: $corpdarkblue;
-}
