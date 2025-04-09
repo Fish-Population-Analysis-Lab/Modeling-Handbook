@@ -51,6 +51,7 @@ format:
     self-contained: true
   
  pdf:
+    documentclass: book
     include-in-header: preamble.tex
     
 editor: 
