@@ -43,9 +43,9 @@ format:
   html:
     number-depth: 1
     link-external-newwindow: true
-    theme: #bootswatch themes.  For other options check out https://bootswatch.com/
-      - default
-      - custom.scss
+    theme: custom.scss #bootswatch themes.  For other options check out https://bootswatch.com/
+      #- default
+      #- custom.scss
     #css: styles.css
     #df-print: paged
     #self-contained: true
