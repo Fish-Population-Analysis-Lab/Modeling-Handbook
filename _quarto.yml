@@ -1,5 +1,6 @@
 project:
   type: book
+  
   resources: 
     - "robots.txt" # this file prevents web crawlers from scraping your content for training AI/LLMs.  Downloaded from https://github.com/ai-robots-txt/ai.robots.txt v1.2.0
 
@@ -11,6 +12,8 @@ execute:
   
 book:
   title: "Fish Population Analysis Lab Handbook"
+   logo: 
+    small: logo_img/tumsat2025.png
   search: true
   repo-url: https://github.com/Fish-Population-Analysis-Lab/Modeling-Handbook#
   repo-actions: [edit, issue]
@@ -48,8 +51,6 @@ format:
     #css: styles.css
     #df-print: paged
     #self-contained: true
-logo:
-  small: logo_img/tumsat2025.png
   
 editor: 
   markdown:
