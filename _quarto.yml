@@ -41,7 +41,7 @@ format:
     link-external-newwindow: true
     theme: #bootswatch themes.  For other options check out https://bootswatch.com/
       light: flatly
-      dark: darkly
+      dark: Cerulean
     css: styles.css
 
 editor: 
