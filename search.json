@@ -104,7 +104,7 @@
     "href": "onboarding.html",
     "title": "3  Onboarding",
     "section": "",
-    "text": "First day",
+    "text": "First day\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Onboarding</span>"
     ]
