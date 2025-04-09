@@ -18,137 +18,17 @@ $$
 
 
 ```{r}
-#| include: false
-
 library(ggplot2)
-source("my_themes.R")
-```
 
-```{r}
-#| include: false
-blue <- "#1E90FF"   # HCR1
-orange <- "#FF8C00" # HCR2
-Cyan <- "#00CED1"  # HCR3
-purple <- "#8A2BE2" # HCR4
-red <- "#DC143C"    # HCR5
-teal <- "#20B2AA"   # HCR6
-```
-
-
-
-```{r out.width="90%"}
-#| echo: false
-#| warning: false
-#| message: false
-# Load necessary library
-library(ggplot2)
-library(grid)
-
-# Define key biomass points
-Blim <- 0.3        # Limit biomass level (Blim)
-Btrigger <- 0.5    # Trigger biomass level (Btrigger)
-Bmax <- 1.0        # Maximum biomass (100% of unfished biomass)
-FMSY <- 1.0        # Maximum sustainable fishing mortality
-
-# Create a sequence of biomass values
-B_values <- seq(0, Bmax, length.out = 100)
-
-# Compute fishing mortality based on the HCR rule
-F_values <- ifelse(B_values < Blim, 0,
-                   ifelse(B_values <= Btrigger, FMSY * (B_values - Blim) / (Btrigger - Blim), 
-                          FMSY))
-
-# Create a data frame
-df <- data.frame(Biomass = B_values, Fishing_Mortality = F_values)
-
-# Generate the plot
-ggplot(df, aes(x = Biomass, y = Fishing_Mortality)) + 
-  
-  # HCR Curve
-  geom_line(color = blue, size = 5, aes(linetype = "HCR Curve")) +
-  
-  # Reference points as vertical dashed lines
-  geom_vline(aes(xintercept = Blim, color = "Blim"), linetype = "dashed", size = 2) +
-  geom_vline(aes(xintercept = Btrigger, color = "Btrigger"), linetype = "dashed", size = 2) +
-  
-  # Labels and legend
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point(color = "steelblue", size = 3) +
   labs(
-    title = "HCR A", 
-    x = expression(B  ~ bold("/") ~  B[MSY]), 
-    y = expression(F  ~ bold("/") ~  F[MSY]),
-    linetype = "HCR Components", 
-    color = NULL  # Remove color legend title
+    title = "Fuel Efficiency vs. Car Weight",
+    x = "Weight (1000 lbs)",
+    y = "Miles per Gallon (mpg)"
   ) +
-  
-  # Scale colors for legend
-  scale_color_manual(values = c("Blim" = "red", 
-                                "Btrigger" = "green")) +
-  
-  # Set y-axis breaks to only show 0.0, 0.5, and 1.0
-  scale_y_continuous(breaks = c(0.0, 0.5, 1.0)) +
-  
-  # Set x-axis breaks to include Blim and Btrigger explicitly
-  scale_x_continuous(breaks = c(0.0, 0.3, 0.5, 1.0)) +
-  
-  # Custom theme
-  #theme_minimal() +
-  
-  # Theme adjustments
-  theme(
-    # Titles and Axis Labels
-    plot.title = element_text(hjust = 0.5, face = "bold", size = 35, colour = blue),
-    axis.title = element_text(face = "bold", size = 35),
-    axis.text.x = element_text(size = 28, face = "bold"),
-    axis.text.y = element_text(size = 28, face = "bold"),
-    
-    # Legend Positioning and Style
-    legend.position = c(0.88, 0.89),  # Position legend inside the plot
-    legend.justification = c(1, 1),    
-    legend.title = element_blank(),    
-    legend.text = element_text(face = "bold", size = 8),  
-    legend.background = element_rect(fill = "white", colour = "black", linewidth = 0.5),
-    legend.key = element_rect(fill = "white"),
-    legend.key.height = unit(0.25, "line"),
-    legend.key.width = unit(0.8, "line"),
-    legend.key.size = grid::unit(0.2, "lines"),
-    legend.spacing.x = unit(0.05, "cm"),
-    legend.spacing.y = unit(0.05, "cm"),
-    
-    # Grid, Ticks, and Border
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
-    panel.background = element_blank(),
-    panel.border = element_rect(fill = NA, colour = "grey45", linewidth = 4),
-    
-    # Bold Formatting for Various Text Elements
-    text = element_text(face = "bold"),
-    plot.subtitle = element_text(face = "bold"),
-    plot.caption = element_text(face = "bold")
-  ) +
-  theme(
-  axis.ticks = element_line(linewidth = 2, color = "grey45"),  # Makes axis ticks bolder
-  axis.ticks.length = grid::unit(20 / 2.2, "pt"),  # Increases tick length
-  
-  strip.background = element_rect(fill = "grey45", color = "grey45", linewidth = 2),  # Thicker strip lines
-  strip.text = element_text(face = "bold", size = rel(1.8))  # Increase strip text size and boldness
-)+
-
-
-
-  # Combine linetype and color into a single legend frame
-  guides(
-    color = guide_legend(override.aes = list(linetype = 1)),
-    linetype = guide_legend(override.aes = list(color = blue))
-  ) +
-  
-  # Add mathematical formula annotation
-  annotation_custom(
-    grob = textGrob(
-      label = expression(F == F[MSY] * frac(B - B[lim], B[trigger] - B[lim])),
-      gp = gpar(fontsize = 25, fontface = "italic"),
-      hjust = 0, vjust = 1
-    ),
-    xmin = 0.5, xmax = 0.64, ymin = 0.3, ymax = 0.4  # Adjust the placement of the annotation
-  )
-
+  theme_minimal()
 ```
+
+
+
