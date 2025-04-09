@@ -1,3 +1,19 @@
-# Dashboard work
+---
+title: "My Plot Page"
+format: html
+---
 
-Here I want too include r code.
+```{r, echo=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  comment = "  ",
+  fig.align = 'center'
+)
+```
+
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(mpg, wt)) + geom_point()
+```
