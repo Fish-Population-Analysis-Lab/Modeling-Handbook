@@ -5,9 +5,9 @@ project:
 
 execute: 
   freeze: auto #only important if your book includes executed code
-  echo: false
-  warning: false
-  message: false
+  #echo: false
+  #warning: false
+  #message: false
   
 book:
   title: "Fish Population Analysis Lab Handbook"
@@ -28,13 +28,13 @@ book:
     - contributing.qmd
     - href: code-of-conduct.qmd
       text: "Code of Conduct" # A different title for the TOC than on the page itself
-    - group-expectations.qmd
-    - onboarding.qmd
-    - offboarding.qmd
-    - dashboard-r.qmd
-    - research-best-practices.qmd
-    - authorship.qmd
-    - references.qmd
+    #- group-expectations.qmd
+    #- onboarding.qmd
+    #- offboarding.qmd
+   # - dashboard-r.qmd
+    #- research-best-practices.qmd
+    #- authorship.qmd
+    #- references.qmd
 
 bibliography: references.bib
 
