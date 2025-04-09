@@ -1,4 +1,4 @@
-# Spatio-Temporal modeling
+# Spatio Temporal modeling
 
 This may be difficult to finalize until someone goes through the offboarding process and takes thorough notes (ideally by [editing](contributing.qmd) this page).
 Here are some discussion topics to get you started though:
