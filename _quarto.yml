@@ -48,7 +48,9 @@ format:
     #css: styles.css
     #df-print: paged
     #self-contained: true
-
+logo:
+  small: logo_img/tumsat2025.png
+  
 editor: 
   markdown:
     wrap: sentence #Forces each sentence to be on its own line in source markdown, doesn't affect how it is rendered
