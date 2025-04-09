@@ -25,15 +25,11 @@ See [Editing This Book](contributing.qmd).
 
 ## First day
 
-![Management strategy]("fig/mse.png")
-
 
 
 ## First week
 
-1.  Set up regular meetings
-2.  Stake out lab space
-3.  etc...
+
 
 ## First semester
 
