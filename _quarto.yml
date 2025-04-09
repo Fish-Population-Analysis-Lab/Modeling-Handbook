@@ -17,7 +17,7 @@ book:
   repo-link-target: "_blank" #makes issue and edit links open in a new window/tab 
   page-footer: 
     left: '© 2024 by El hadji Ndiaye' 
-    right: 'Made with [Quarto](https://quarto.org/)'
+    right: 'Modeling Handbook'
   author: 
     - name: El hadji Ndiaye
       orcid: 0000-0000-0000-0000
