@@ -25,9 +25,10 @@ See [Editing This Book](contributing.qmd).
 
 ## First day
 
-1.  Find your desk
-2.  Meet your PI
-3.  etc...
+```{r out.width="100%", fig.cap="MSE framework: mathematical models"}
+knitr::include_graphics("fig/mse.png")
+```
+
 
 ## First week
 
