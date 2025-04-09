@@ -43,6 +43,7 @@ format:
       light: flatly
       dark: Cerulean
     css: styles.css
+    fonttheme: professionalfonts
 
 editor: 
   markdown:
