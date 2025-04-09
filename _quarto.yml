@@ -48,6 +48,9 @@ format:
     css: styles.css
     df-print: paged
     self-contained: true
+    fig-width: 8
+    fig-height: 4
+    code-fold: true
 
 editor: 
   markdown:
