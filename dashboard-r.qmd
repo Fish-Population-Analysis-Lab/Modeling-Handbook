@@ -17,18 +17,7 @@ a^2 + b^2 &= c^2
 $$
 
 
-```{r}
-library(ggplot2)
 
-ggplot(mtcars, aes(x = wt, y = mpg)) +
-  geom_point(color = "steelblue", size = 3) +
-  labs(
-    title = "Fuel Efficiency vs. Car Weight",
-    x = "Weight (1000 lbs)",
-    y = "Miles per Gallon (mpg)"
-  ) +
-  theme_minimal()
-```
 
 
 
