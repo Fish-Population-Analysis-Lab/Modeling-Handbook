@@ -12,8 +12,6 @@ execute:
   
 book:
   title: "Fish Population Analysis Lab Handbook"
-   logo: 
-    small: logo_img/tumsat2025.png
   search: true
   repo-url: https://github.com/Fish-Population-Analysis-Lab/Modeling-Handbook#
   repo-actions: [edit, issue]
