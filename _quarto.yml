@@ -17,7 +17,7 @@ book:
   repo-link-target: "_blank" #makes issue and edit links open in a new window/tab 
   page-footer: 
     left: '© 2024 by El hadji Ndiaye' 
-    right: 'Modeling Handbook'
+    right: 'Made with [Quarto](https://quarto.org/)'
   author: 
     - name: El hadji Ndiaye
       orcid: 0000-0000-0000-0000
@@ -31,6 +31,7 @@ book:
     - group-expectations.qmd
     - onboarding.qmd
     - offboarding.qmd
+    - dashboard-r.qmd
     - research-best-practices.qmd
     - authorship.qmd
     - references.qmd
@@ -42,7 +43,6 @@ format:
     number-depth: 1
     link-external-newwindow: true
      theme:  #bootswatch themes.  For other options check out https://bootswatch.com/
-       dark: Cerulean
       
     css: styles.css
     df-print: paged
