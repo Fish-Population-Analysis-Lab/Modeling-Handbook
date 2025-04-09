@@ -30,3 +30,12 @@ pre.sourceCode {
 .smaller {
   font-size: 50%;
 }
+
+// CBS corporate colors
+$corplightblue: #00a1cd;
+$corpdarkblue: #0058b8;
+
+.some-element {
+  background-color: $corplightblue;
+  color: $corpdarkblue;
+}
