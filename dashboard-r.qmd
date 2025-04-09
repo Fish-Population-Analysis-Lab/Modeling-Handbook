@@ -1,4 +1,1 @@
----
-title: "My Plot Page"
-format: html
----
+# Dashbord title normal
