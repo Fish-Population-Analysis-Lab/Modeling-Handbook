@@ -43,7 +43,7 @@ format:
     number-depth: 1
     link-external-newwindow: true
     theme: default #bootswatch themes.  For other options check out https://bootswatch.com/
-     css: styles.css
+      css: styles.css
     #df-print: paged
     #self-contained: true
 
