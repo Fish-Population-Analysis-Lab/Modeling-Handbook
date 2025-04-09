@@ -42,6 +42,7 @@ format:
     theme: #bootswatch themes.  For other options check out https://bootswatch.com/
       light: flatly
       dark: darkly
+    css: styles.css
 
 editor: 
   markdown:
