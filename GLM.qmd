@@ -1,0 +1,5 @@
+# GLM
+
+## About traditional models 
+
+this is good to know 
