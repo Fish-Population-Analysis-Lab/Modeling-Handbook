@@ -46,7 +46,7 @@ format:
     theme:  #bootswatch themes.  For other options check out https://bootswatch.com/
       - default
       - custom.scss
-    css: styles.css
+    #css: styles.css
     df-print: paged
     self-contained: true
   
