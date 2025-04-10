@@ -70,13 +70,53 @@
     ]
   },
   {
-    "objectID": "group-expectations.html",
-    "href": "group-expectations.html",
+    "objectID": "glm.html",
+    "href": "glm.html",
     "title": "2  GLM",
     "section": "",
     "text": "This is GLM part for my reference",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>GLM</span>"
+    ]
+  },
+  {
+    "objectID": "gam.html",
+    "href": "gam.html",
+    "title": "3  GAM",
+    "section": "",
+    "text": "First day\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>GAM</span>"
+    ]
+  },
+  {
+    "objectID": "gam.html#first-day",
+    "href": "gam.html#first-day",
+    "title": "3  GAM",
+    "section": "",
+    "text": "Caption",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>GAM</span>"
+    ]
+  },
+  {
+    "objectID": "gam.html#first-week",
+    "href": "gam.html#first-week",
+    "title": "3  GAM",
+    "section": "First week",
+    "text": "First week",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>GAM</span>"
+    ]
+  },
+  {
+    "objectID": "gam.html#first-semester",
+    "href": "gam.html#first-semester",
+    "title": "3  GAM",
+    "section": "First semester",
+    "text": "First semester\n\nHave a plan\nPresent at group meeting\netc…",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>GAM</span>"
     ]
   }
 ]
