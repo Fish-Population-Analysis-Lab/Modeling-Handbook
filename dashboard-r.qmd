@@ -1,11 +1,6 @@
 # Dashbord title normal
 
 
-Euler's identity is beautiful:
-
-$$
-e^{i\pi} + 1 = 0
-$$
 
 
 
