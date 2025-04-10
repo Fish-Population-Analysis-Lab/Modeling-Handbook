@@ -29,9 +29,9 @@ book:
     - contributing.qmd
     - href: code-of-conduct.qmd
       text: "Code of Conduct" # A different title for the TOC than on the page itself
-    #- glm.qmd
-    # - Delta-GLM.qmd
-    # - GAM.qmd
+    - glm.qmd
+    - Delta-GLM.qmd
+    - GAM.qmd
     # - Delta-GAM.qmd
     # - sdmTMB.qmd
     # - tinyVAST.qmd
