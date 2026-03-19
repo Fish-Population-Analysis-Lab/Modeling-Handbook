@@ -1,2 +1,36 @@
 # SPiCT
 
+## Equations
+
+$$
+\frac{dB_t}{dt} = \frac{r}{n - 1} B_t \left(1 - \left[\frac{B_t}{K}\right]^{n - 1} \right) - F_t B_t
+$$
+
+
+$$
+dB_t = \left( \gamma_m \frac{B_t}{K} - \gamma_m \left[\frac{B_t}{K}\right]^n - F_t B_t \right) dt + \sigma_B B_t \, dW_t
+$$
+
+$$
+\log(I_t) = \log(q_t B_t) + \varepsilon_t
+$$
+
+$$
+\log(C_t) = \log\left( \int_t^{t+\Delta t} F_s B_s \, ds \right) + \varepsilon_t
+$$
+
+$$
+\varepsilon_t \sim \mathcal{N}(0, \sigma_I^2), \quad \epsilon_t \sim \mathcal{N}(0, \sigma_C^2)
+$$
+
+$$
+m = \frac{rK}{n^{\frac{n}{n - 1}} } 
+$$
+
+$$
+\gamma = \frac{n^{\frac{n}{n - 1}}}{(n - 1)}
+$$
+
+
+
+

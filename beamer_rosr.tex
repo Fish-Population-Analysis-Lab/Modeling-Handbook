@@ -1,0 +1,489 @@
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(handout)$handout,$endif$$if(beamer)$ignorenonframetext,$endif$$if(aspectratio)$aspectratio=$aspectratio$,$endif$$if(notes)$notes=$notes$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+
+% fix the Pandoc 2.8 error "! LaTeX Error: Environment cslreferences undefined."
+% see <https://github.com/rstudio/rmarkdown/issues/1649>
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+$endif$
+
+
+
+$if(theme)$
+\usetheme{$theme$}
+$endif$
+$if(colortheme)$
+\usecolortheme{$colortheme$}
+$endif$
+$if(fonttheme)$
+\usefonttheme{$fonttheme$}
+$endif$
+$if(innertheme)$
+\useinnertheme{$innertheme$}
+$endif$
+$if(outertheme)$
+\useoutertheme{$outertheme$}
+$endif$
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\usepackage{amssymb,amsmath}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% For my text alignment left and right
+%\usepackage{ragged2e}  # Required for ragged text alignment
+%\linespread{1.0}
+
+\setbeamertemplate{section in toc}[sections numbered] % pour desactiver la numerotation de beamer
+\setbeamertemplate{section in toc}[default] % pour desactiver la numerotation de beamer
+
+\setbeamertemplate{headline}{} % to remove miniframes or section/subsection navigation bar
+
+
+\usepackage[dvipsnames, table]{xcolor}
+
+%==============================================
+% Define a custom title size command
+\newcommand{\mytitlesize}{\fontsize{12}{13}\selectfont}
+
+%____________________________________________
+
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+%\usepackage{amsmath}
+
+%\newcommand{\code}[1]{\texttt{#1}}
+% CBS corporate light blue
+\definecolor{corplightblue}{HTML}{00a1cd}
+% CBS corporate dark blue
+\definecolor{corpdarkblue}{HTML}{0058b8}
+%-------------------------------------------
+% These are my colors -- there are many like them, but these ones are mine.
+\definecolor{blue}{RGB}{0,114,178}
+\definecolor{red}{RGB}{213,94,0}
+\definecolor{yellow}{RGB}{240,228,66}
+\definecolor{green}{RGB}{0,158,115}
+%-------------------------------------------
+\definecolor{LightBlue}{RGB}{66, 163, 251}
+%-------------------------------------------
+\definecolor{DarkBlue}{RGB}{36, 100, 176}
+\definecolor{LightGray01}{gray}{.98}
+%------------------------------------------
+\setbeamertemplate{caption}[numbered]
+
+\usepackage{hyperref}
+
+\usepackage{booktabs}
+
+\usepackage{longtable}
+\usepackage{caption}
+\captionsetup{justification=justified}
+\captionsetup{width=0.5\textwidth}
+%\captionsetup[table]{skip=1pt} % Adjust the value to control the space
+
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{5pt}
+
+
+%----------------------------------------------------------------
+\usepackage{subfig}
+%\usepackage{caption}
+%\usepackage{subcaption}
+%\captionsetup[figure]{name=Figure, labelfont={ color=red}, font=small}
+\captionsetup[figure]{name=Figure, labelfont={bf, color=red}, font=footnotesize}
+\captionsetup[table]{name=Table, labelfont={bf, color=red}, font=footnotesize}
+\captionsetup{labelfont=bf, font=footnotesize}
+%---------
+
+%-----------------------------------------
+\usepackage{bm}
+
+\DeclareFixedFont{\bigsf}{T1}{phv}{b}{n}{0.3cm}
+
+\DeclareFixedFont{\bigssf}{T1}{phv}{b}{n}{0.5cm}
+
+\DeclareFixedFont{\bigssff}{T1}{phv}{b}{n}{1cm}
+%---------------------------------------------
+\usepackage{pdfpages}
+%\usepackage{graphicx}
+%\usepackage{tikz}
+\usepackage{adjustbox}
+%-------------------------------------------------------
+\usepackage{pifont}
+%%-------------------------------------------------------
+%\usepackage{array,tabularx}
+%\include{package10}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tikz}
+
+\newcommand{\code}[1]{\texttt{#1}}
+% CBS corporate light blue
+\definecolor{corplightblue}{HTML}{00a1cd}
+% CBS corporate dark blue
+\definecolor{corpdarkblue}{HTML}{0058b8}
+
+% set title colors
+%\setbeamercolor{frametitle}{fg=corpdarkblue}
+%\setbeamercolor{title}{fg=corpdarkblue}
+%\setbeamercolor{block title}{fg=corplightblue}
+
+% creating wide itemize environment
+\newenvironment{wideitemize}{\itemize\addtolength{\itemsep}{10pt}}{\enditemize}
+% creating wide itemize environment
+\newenvironment{eluitemize}{\itemize\addtolength{\itemsep}{5pt}}{\enditemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[most,listings]{tcolorbox}
+\tcbuselibrary{skins}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%==================================
+
+\usepackage{lmodern} % better font
+
+%\usepackage[most,listings]{tcolorbox}
+%\usepackage{hyperref}
+
+\tcbuselibrary{listings,theorems}
+
+\newcounter{Remarque}
+
+\newtcbtheorem[use counter=Remarque]{Remarque}{Remarque}%
+{colframe=red!25, colback=red!25, coltitle=black, arc=0pt,outer arc=0pt, fonttitle=\bfseries}{vb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% for colorful equation
+\usepackage{tikz}
+\usetikzlibrary{backgrounds, arrows, shapes, tikzmark, calc}
+
+% Define custom colors for shading
+\colorlet{mhpurple}{Plum!80}
+
+% Commands for highlighting text without using TikZ
+\newcommand{\highlight}[2]{\colorbox{#1!17}{#2}}
+\newcommand{\highlightdark}[2]{\colorbox{#1!47}{#2}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tcbuselibrary{listingsutf8} % Optional, for more features
+
+\newtcolorbox{YettAnotherComponent}[1][]{%
+  enhanced,
+  colframe=blue!50!black,
+  colback=yellow!20!white,
+  coltitle=red!50!black,
+  fonttitle=\upshape\bfseries,
+  fontupper=\upshape\bfseries,
+  drop fuzzy shadow=blue!50!black!50!white,
+  boxrule=0.4pt,
+  % This sets the title without numbering
+  #1 % Allows optional parameters
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{varwidth}
+
+\newtcolorbox{myuox}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=black!5,colframe=black!5,boxrule=0.2mm,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=tcbcolback!30!black]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,
+middle color=tcbcolback!60!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={#2},#1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ % \usepackage{varwidth}
+\newtcolorbox{mybox}[2][]{enhanced,
+before skip=2mm,after skip=2mm, colback=black!5,colframe=black!50,boxrule=0.2mm,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight}, varwidth boxed title*=-3cm,
+boxed title style={frame code={
+            \path[fill=tcbcolback!30!black]
+              ([yshift=-1mm,xshift=-1mm]frame.north west)
+                arc[start angle=0,end angle=180,radius=1mm]
+              ([yshift=-1mm,xshift=1mm]frame.north east)
+                arc[start angle=180,end angle=0,radius=1mm];
+            \path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,
+              middle color=tcbcolback!80!black]
+              ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+              [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+              -- (frame.south east) -- (frame.south west)
+              -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+              [sharp corners]-- cycle;
+            },interior engine=empty,
+          },
+          fonttitle=\bfseries,
+          title={#2},#1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{varwidth}
+\newtcolorbox{mybb}[2][]{enhanced,before skip=2mm,after skip=2mm, colback=black!5,colframe=black!50,boxrule=0.2mm,
+%attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+%varwidth boxed title*=-3cm,
+boxed title style={frame code={
+%            \path[fill=tcbcolback!30!black]
+%              ([yshift=-1mm,xshift=-1mm]frame.north west)
+%                arc[start angle=0,end angle=180,radius=1mm]
+%              ([yshift=-1mm,xshift=1mm]frame.north east)
+%                arc[start angle=180,end angle=0,radius=1mm];
+%            \path[left color=tcbcolback!60!black,right color=tcbcolback!60!black,
+%              middle color=tcbcolback!80!black]
+%              ([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+%              [rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+%              -- (frame.south east) -- (frame.south west)
+%              -- ([xshift=-1mm,yshift=-1mm]frame.north west)
+%              [sharp corners]-- cycle;
+            },interior engine=empty,
+          },
+          fonttitle=\bfseries,
+          title={#2},#1}
+
+%%%%=================================================================
+%module arrow/.style={single arrow, single arrow head extend=2.5mm, drop shadow, draw=gray!75, 
+%inner color=gray!20, outer color=gray!35, thick, shape border uses incircle, text height=1.5mm, 
+%text width=2.5mm, anchor=center},
+%module doubleArrow/.style={double arrow, double arrow head extend=2.5mm, 
+%drop shadow, draw=gray!75, inner color=gray!20, outer color=gray!35, thick, 
+%shape border uses incircle, text height=1mm, text width=5mm, anchor=center},
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%===========================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%===========================================
+%----------------------------------------------------
+\usetikzlibrary{positioning,shapes.arrows,shadows.blur,arrows.meta,calc}
+
+\tikzset{block/.style={draw=orange,rounded corners, fill=white, rectangle, 
+minimum height=2.8em, minimum width=5em},
+sum/.style={draw, fill=white, circle, node distance=1cm},
+input/.style={coordinate},
+output/.style={coordinate},
+pinstyle/.style={pin edge={to-,thin,black}},
+rotated arrow/.style={single arrow, single arrow head extend=2mm, drop shadow, draw=gray!75, 
+inner color=gray!20, outer color=gray!35, thick, shape border uses incircle, text height=1mm, 
+text width=1mm, anchor=center}
+}
+
+%--------------------
+%rotated arrow/.style={single arrow,anchor=east,rotate=#1,inner sep=4pt,
+%top color=LightGray01,bottom color=LightGray01,minimum height=0.7cm,minimum width=2mm,
+%shape border rotate=#1,blur shadow}
+%----------------------------------------------------------
+%module arrow/.style={single arrow, single arrow head extend=2.5mm, drop shadow, draw=gray!75, inner color=gray!20, outer color=gray!35, thick, shape border uses incircle, text height=1.5mm, text width=2.5mm, anchor=center},
+  %module doubleArrow/.style={double arrow, double arrow head extend=2.5mm, drop shadow, draw=gray!75, inner color=gray!20, outer color=gray!35, thick, shape border uses incircle, text height=1mm, text width=5mm, anchor=center},
+%}
+%=======================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\tcbuselibrary{listingsutf8} % Optional, for more features
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+$if(chinese)$\usepackage{ctex}$endif$
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{lmodern}
+%\usepackage{xecjk}
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+    \newcommand{\euro}{€}
+  \else
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    $if(euro)$
+      \usepackage{eurosym}
+    $endif$
+  \fi
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+$if(natbib)$
+\usepackage{natbib}
+\bibliographystyle{plainnat}
+$endif$
+$if(biblatex)$
+\usepackage{biblatex}
+$for(bibliography)$
+\addbibresource{$bibliography$}
+$endfor$
+$endif$
+$if(listings)$
+\usepackage{listings}
+$endif$
+$if(lhs)$
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+$endif$
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+$endif$
+$if(tables)$
+\usepackage{longtable,booktabs}
+\usepackage{caption}
+% These lines are needed to make table captions work with longtable:
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+$endif$
+$if(url)$
+\usepackage{url}
+$endif$
+$if(graphics)$
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight0.8\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+$endif$
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+
+\AtBeginPart{
+  \let\insertpartnumber\relax
+  \let\partname\relax
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \let\insertsectionnumber\relax
+  \let\sectionname\relax
+  \frame{\sectionpage}
+}
+\AtBeginSubsection{
+  \let\insertsubsectionnumber\relax
+  \let\subsectionname\relax
+  \frame{\subsectionpage}
+}
+
+$if(strikeout)$
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+$endif$
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+$if(numbersections)$
+$else$
+\setcounter{secnumdepth}{0}
+$endif$
+$if(verbatim-in-note)$
+\VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+$if(lang)$
+\ifxetex
+  \usepackage{polyglossia}
+  \setmainlanguage{$mainlang$}
+  \setotherlanguages{$for(otherlang)$$otherlang$$sep$,$endfor$}
+\else
+  \usepackage[shorthands=off,$lang$]{babel}
+\fi
+$endif$
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$if(title)$
+\title{$title$}
+$endif$
+$if(subtitle)$
+\subtitle{$subtitle$}
+$endif$
+$if(author)$
+\author[$for(shortauthor)$$shortauthor$$sep$ \and $endfor$]{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+$if(institute)$
+\institute{$for(institute)$$institute$$sep$ \and $endfor$}
+$endif$
+$if(institute)$
+\date{$date$}
+$endif$
+
+$if(title_graphic)$
+% \titlegraphic{\includegraphics[width=$title_graphic_width$\paperwidth]{$title_graphic$}}
+\titlegraphic{$for(title_graphic)$\includegraphics[width=$title_graphic_width$\paperwidth]{$title_graphic$}~$endfor$}
+$endif$
+
+$if(pagenumber)$
+%\setbeamertemplate{footline}[page number]
+\defbeamertemplate*{footline}{shadow theme}
+{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fil,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in head/foot}$if(total_pagenumber_left)$\insertframenumber\,/\,$if(total_pagenumber)$$total_pagenumber$$else$\inserttotalframenumber$endif$$endif$\hfill\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hfill$if(total_pagenumber_right)$\insertframenumber\,/\,$if(total_pagenumber)$$total_pagenumber$$else$\inserttotalframenumber$endif$$endif$%
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+$endif$
+
+$if(navigation_empty)$
+\beamertemplatenavigationsymbolsempty
+$endif$
+
+$if(note_page)$
+\setbeamertemplate{note page}[$note_page$]
+$endif$
+
+
+\title{\bfseries \LARGE Management strategy evaluation for northern shrimp in the Barents Sea (ICES areas 1 \& 2)}
+
+
+\begin{document}
+$if(title)$
+\frame{\titlepage}
+$endif$
+
+$for(include-before)$
+$include-before$
+
+$endfor$
+$if(toc)$
+\begin{frame}{\bf Table of content}
+\tableofcontents
+\end{frame}
+$endif$
+$body$
+
+$for(include-after)$
+$include-after$
+$endfor$
+\end{document}

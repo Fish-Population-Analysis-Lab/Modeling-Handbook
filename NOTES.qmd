@@ -1,2 +1,37 @@
 # NOTES
 
+## CPUE standardization
+
+### Density and catchability covariates
+
+- **N1.** Since Beverton and Holt, Section 12) (1957), stock assessment scientists
+have standardized fishery CPUE to remove the confounding effects
+of vessel size and power.
+
+- **N2.** For example, Maunder and Punt (2004) state “Explanatory variables should, however, be considered in an analysis only if there is an a priori reason that they may influence catchability.”
+
+- **N3.** However, spatial ecologists do the exact opposite by including covariates and then conditioning upon their effect when predicting densities across space. 
+
+- **N4.** To alleviate this confusion, Thorson (2019a) distinguishes between ‘catchability’ and ‘density’ covariates: both are included in a linear predictor to explain catch-and-effort data, but only density (and not catchability) covariates are conditioned upon when predicting densities across space. 
+
+
+- **N5.** The index is constructed by aggregating predictions across a specified spatial and temporal domain such that the effect of catchability is removed from the index.
+
+
+- **N6.** **Distinguishing** between **catchability** and **density covariates** leads to the question: how does the analyst know whether a covariate affects density, catchability, or both? For example, species might migrate to maintain a desired daytime foraging temperature (*Lehodey et al., 1997*) such that local temperature predicts population densities. 
+
+
+- **N7.** **Predictors** that are **treated as factors** in a **statistical model** need a **reference** or **base level** — a level from which the other coeffcients for that variable estimate a difference. The base level thenbecomes the predictor value that is used in the prediction for the standardized index. We chose the most frequent factor level as the base level — a common choice for these types of models
+(Maunder and Punt 2004).
+
+- **N8.** The parameter $\nu$
+controls the smoothness of the covariance function. We set $\nu=1$, which lets us take advantage of the Stochastic Partial Differential Equation (SPDE) approximation to Gaussian Markov Random Fields (GMRF) to greatly increase computational effciency (Lindgren et al. 2011).
+
+- **N9.** Our spatial model falls into the general category of “predictive process” models (e.g., Latimer et al. 2009, Shelton et al. 2014, Anderson and Ward 2019), in which the model keeps track of a limited number of “knots” that approximate unexplained spatial variation By keeping track of a smaller number of knots than the full spatial data set, we can increase computational effciency.
+The model predictions can be projected to the original data locations or any new set of
+locations as long as an appropriate covariance matrix can be calculated (e.g., Latimer et al.
+2009). Higher numbers of knots result in a better approximation of the spatial random effects at a greater computational cost. We ft the spatial models with one less knot than the number of
+observations if there were fewer than 200 observations and 200 knots otherwise. Following one
+common practice (e.g., Shelton et al. 2014, Thorson and Barnett 2017, Anderson and Ward
+2019) we chose the location of the knots with a k-means clustering algorithm with a fxed random
+seed to ensure reproducible results.

@@ -1,0 +1,21 @@
+{
+  "hash": "844d3618531a56e3afb20760f07f5f49",
+  "result": {
+    "engine": "knitr",
+    "markdown": "# GLM\n\n\n\n\n\n\n\n\n\n\n\n## About traditional models \n\nthis is good to know \n\n:::: columns\n\n\n::: {.column width=\"50%\"}\n\n- this is one \n- this is two \n- and three here\n\n:::\n\n::: {.column width=\"50%\"}\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(cars)\n```\n\n::: {.cell-output-display}\n![](GLM_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n:::\n\n::::\n\n\n\n\n",
+    "supporting": [
+      "GLM_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

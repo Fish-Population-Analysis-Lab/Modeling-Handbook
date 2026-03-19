@@ -1,0 +1,19 @@
+{
+  "hash": "4c11b9c264fbebffcb75e43e6b2f0f26",
+  "result": {
+    "engine": "knitr",
+    "markdown": "<!-- NOTE: do not re-name this file!  It has to be called index.qmd -->\n\n# Welcome! {.unnumbered}\n\n\n::: {.cell}\n\n:::\n\n\n\n::: callout-note\nNote to lab members: this document is a work in progress and may change.\nIt is your responsibility to be familiar with the content, so you should review these policies regularly.\n:::\n\nWelcome to Fish Population Analysis Lab.\nIn this lab, we study modeling applied on fisheries\n\n::: callout-important\n## Edit This Section\n\nMany lab group handbooks start with a short description of what the lab works on\n:::\n\n## Lab Philosophy\n\n::: callout-important\n## Edit This Section\n\nThis is a good place to put any information about overall lab philosophies.\nFor example, thoughts about open science, collaboration, publishing, and the role of science in the world\n:::\n\n## Mentoring Philosophy\n::: callout-important\n## Edit This Section\n\nThis may also be a good place to outline your mentoring philosophy as a PI.\nIf this gets too long, it could instead go in a section along with mentee expectations\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {
+      "knitr": [
+        "{\"type\":\"list\",\"attributes\":{},\"value\":[]}"
+      ]
+    },
+    "preserve": null,
+    "postProcess": false
+  }
+}

@@ -13,9 +13,9 @@ execute:
 book:
   title: "Fish Population Analysis Lab Handbook"
   search: true
-  repo-url: https://github.com/Fish-Population-Analysis-Lab/Modeling-Handbook#
-  repo-actions: [edit, issue]
-  repo-link-target: "_blank" #makes issue and edit links open in a new window/tab 
+  #repo-url: https://github.com/Fish-Population-Analysis-Lab/Modeling-Handbook#
+  #repo-actions: [edit, issue]
+  #repo-link-target: "_blank" #makes issue and edit links open in a new window/tab 
   page-footer: 
     left: '© 2024 by El hadji Ndiaye' 
     right: 'Modeling Handbook'
@@ -30,19 +30,20 @@ book:
     - href: code-of-conduct.qmd
       text: "Code of Conduct" # A different title for the TOC than on the page itself
     - GLM.qmd
-    - Delta-GLM.qmd
-    - GAM.qmd
-    - Delta-GAM.qmd
-    - sdmTMB.qmd
-    - tinyVAST.qmd
-    - VAST.qmd
-    - INLA.qmd
+    # - Delta-GLM.qmd
+    # - GAM.qmd
+    # - Delta-GAM.qmd
+    # - TWEEDIE.qmd
+    # - sdmTMB.qmd
+    # - tinyVAST.qmd
+    # - VAST.qmd
+    # - INLA.qmd
     - SPiCT.qmd
-    - JABBA.qmd
+    # - JABBA.qmd
     - MSE.qmd
-    - BAYESIAN.qmd
-    - NOTES.qmd
-    - references.qmd
+    # - BAYESIAN.qmd
+    # - NOTES.qmd
+    # - references.qmd
 
 bibliography: references.bib
 
@@ -51,16 +52,20 @@ format:
     number-depth: 1
     link-external-newwindow: true
     theme:  #bootswatch themes.  For other options check out https://bootswatch.com/
-      - default
-      - custom.scss
+      dark: [custom2.scss]
+      #- default
+      #- custom.scss
     #css: styles.css
     df-print: paged
     self-contained: true
+    code-fold: true   # optional: allows folding code
+    code-tools: true  # optional: shows "copy code" buttons
   
- #pdf:
-    #documentclass: book
-    #include-in-header: preamble.tex
-    
+  pdf:
+    documentclass: book
+    pdf-engine: xelatex
+    include-in-header: preamble.tex
+aspectratio: 169   
 editor: 
   markdown:
     wrap: sentence #Forces each sentence to be on its own line in source markdown, doesn't affect how it is rendered

@@ -1,5 +1,67 @@
 # GLM
 
+
+```{r include=FALSE}
+library(tidyverse)
+library(readxl)
+library(tidylog)
+library(RCurl)
+library(viridis)
+library(RColorBrewer)
+library(patchwork)
+library(janitor)
+library(sf)
+library(chron)
+library(lattice)
+library(mapplots)
+library(qwraps2) 
+library(spict)
+```
+
+
+```{r}
+#| include: false
+source("my_themes.R")
+```
+
+
+```{r}
+#| include: false
+blue <- "#1E90FF"   # HCR1
+orange <- "#FF8C00" # HCR2
+Cyan <- "#00CED1"  # HCR3
+purple <- "#8A2BE2" # HCR4
+red <- "#DC143C"    # HCR5
+teal <- "#20B2AA"   # HCR6
+```
+
+
 ## About traditional models 
 
 this is good to know 
+
+:::: columns
+
+
+::: {.column width="50%"}
+
+- this is one 
+- this is two 
+- and three here
+
+:::
+
+::: {.column width="50%"}
+
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE}
+plot(cars)
+```
+
+:::
+
+::::
+
+
+
+
